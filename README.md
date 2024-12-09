@@ -1,4 +1,4 @@
-Eric Melparambil's Portfolio
+Eric Melparambil's Portfolio<br>
 Overview
 Welcome to my personal portfolio website! This is a responsive and interactive site showcasing my profile, experiences, projects, and contact details. It is built with HTML, CSS, and JavaScript to provide a seamless user experience across all devices.
 
