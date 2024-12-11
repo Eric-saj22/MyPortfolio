@@ -1,0 +1,257 @@
+/* GENERAL */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f5f5f5; /* Light gray background */
+  color: #333; /* Dark gray for text */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+p {
+  color: #555; /* Medium gray for secondary text */
+}
+
+/* TRANSITION */
+
+a,
+.btn {
+  transition: all 300ms ease;
+}
+
+/* DESKTOP NAV */
+
+nav,
+.nav-links {
+  display: flex;
+}
+
+nav {
+  justify-content: space-around;
+  align-items: center;
+  height: 17vh;
+  background-color: #ffffff; /* White background for the nav bar */
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.nav-links {
+  gap: 2rem;
+  list-style: none;
+  font-size: 1.5rem;
+}
+
+a {
+  color: #16f4e2; /* Celeste accent for links */
+  text-decoration: none;
+}
+
+a:hover {
+  color: #447e80; /* Tiffany blue for hover */
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+}
+
+.logo {
+  font-size: 2rem;
+  color: #11efff; /* Mint green for logo */
+}
+
+.logo:hover {
+  cursor: default;
+}
+
+/* Hamburger Menu */
+#mobile-nav {
+  display: none;
+}
+
+.hamburger-menu {
+  position: relative;
+  display: inline-block;
+}
+
+.hamburger-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 24px;
+  width: 30px;
+  cursor: pointer;
+}
+
+.hamburger-icon span {
+  width: 100%;
+  height: 2px;
+  background-color: #333; /* Dark gray for menu lines */
+  transition: all 0.3s ease-in-out;
+}
+
+.menu {
+  position: absolute;
+  top: 100%;
+  right: 0%;
+  background-color: #ffffff; /* White for menu background */
+  width: fit-content;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.menu a {
+  display: block;
+  padding: 10px;
+  text-align: center;
+  font-size: 1.5rem;
+  color: #16f4e2; /* Celeste for menu items */
+  text-decoration: none;
+}
+
+.menu a:hover {
+  color: #447e80; /* Tiffany blue on hover */
+}
+
+.menu li {
+  list-style: none;
+}
+
+.menu.open {
+  max-height: 300px;
+}
+
+/* Section */
+
+section {
+  padding-top: 4vh;
+  height: 60vh;
+  margin: 0 10rem;
+  box-sizing: border-box;
+  min-height: fit-content;
+}
+
+.section-container {
+  display: flex;
+}
+
+/* Profile Section */
+#Profile {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  height: 80vh;
+}
+
+.section__pic-container {
+  display: flex;
+  height: 400px;
+  width: 400px;
+  margin: auto 0;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: #16f4e2; /* Celeste for picture placeholder */
+}
+
+.section__text {
+  align-self: center;
+  text-align: center;
+}
+
+.section__text p {
+  font-weight: 600;
+}
+
+.section__text__p1 {
+  text-align: center;
+  color: #447e80; /* Tiffany blue for primary text */
+}
+
+.section__text__p2 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+  color: #11efff; /* Mint green for secondary text */
+}
+
+.title {
+  font-size: 3rem;
+  text-align: center;
+  color: #16f4e2; /* Celeste for section titles */
+}
+
+#socials-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+/* Icons */
+.icon {
+  cursor: pointer;
+  height: 2rem;
+  filter: invert(20%) sepia(60%) saturate(300%) hue-rotate(180deg) brightness(95%);
+}
+
+.icon:hover {
+  filter: invert(40%) sepia(60%) saturate(300%) hue-rotate(220deg) brightness(90%);
+}
+
+/* Button */
+.btn-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.btn {
+  font-weight: 600;
+  transition: all 300ms ease;
+  padding: 1rem;
+  width: 8rem;
+  border-radius: 2rem;
+  text-align: center;
+}
+
+.btn-color-1,
+.btn-color-2 {
+  border: #16f4e2 0.1rem solid; /* Celeste border */
+}
+
+.btn-color-1 {
+  background-color: #11efff; /* Mint green */
+  color: #ffffff; /* White text */
+}
+
+.btn-color-1:hover {
+  background-color: #447e80; /* Tiffany blue */
+  color: #ffffff; /* White text */
+}
+
+.btn-color-2 {
+  background-color: transparent;
+}
+
+.btn-color-2:hover {
+  border: #16f4e2 0.1rem solid; /* Celeste border */
+  color: #16f4e2; /* Celeste text */
+}
+
+/* Footer */
+footer {
+  height: 26vh;
+  margin: 0 1rem;
+  background-color: #ffffff; /* White footer */
+  color: #555; /* Medium gray text */
+  box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.1); /* Subtle top shadow */
+}
+
+footer p {
+  text-align: center;
+  margin-top: 1rem;
+}
