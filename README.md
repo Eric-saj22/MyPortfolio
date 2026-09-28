@@ -17,3 +17,6 @@ CSS: Styled the website for aesthetics and responsiveness.
 Includes custom media queries for mobile optimization.
 JavaScript: Enabled interactivity such as the hamburger menu toggle.
 Assets: Custom images and icons for branding and visual appeal.
+
+my website link
+https://eric-saj22.github.io/MyPortfolio/
