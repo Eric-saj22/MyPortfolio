@@ -1,607 +1,290 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#151716" />
-    <meta
-      name="description"
-      content="Eric Melparambil — Computer Science International student and CFA Level I candidate in Dublin. Explore projects in software, financial research and machine learning."
-    />
-    <meta
-      property="og:title"
-      content="Eric Melparambil — Code meets capital."
-    />
-    <meta
-      property="og:description"
-      content="Software, financial curiosity, and a human perspective. The portfolio of Eric Melparambil."
-    />
-    <meta property="og:type" content="website" />
-    <meta
-      property="og:image"
-      content="https://eric-saj22.github.io/MyPortfolio/assets/pro-pic.jpeg"
-    />
-    <meta
-      property="og:url"
-      content="https://eric-saj22.github.io/MyPortfolio/"
-    />
-    <title>Eric Melparambil — Code meets capital.</title>
-    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mediaaqueries.css" />
-    <script src="script.js" defer></script>
-  </head>
-  <body>
-    <a class="skip-link" href="#main">Skip to content</a>
-    <header class="site-header">
-      <div class="nav-shell">
-        <a class="wordmark" href="#home" aria-label="Eric Melparambil, home"
-          >eric<span class="wordmark-dot">.</span></a
-        >
-        <nav class="desktop-links" aria-label="Main navigation">
-          <a href="#work">Work</a><a href="#experience">Experience</a
-          ><a href="#about">About</a>
-        </nav>
-        <div class="nav-actions">
-          <a class="nav-contact" href="#contact"
-            >Let's talk <span aria-hidden="true">↗</span></a
-          >
-          <button
-            class="menu-toggle"
-            type="button"
-            aria-expanded="false"
-            aria-controls="mobile-menu"
-            aria-label="Open navigation"
-          >
-            <span></span><span></span>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaaqueries.css">
+
+</head>
+<body>
+<script src="script.js"></script>
+<nav id="desktop-nav">
+    <div class="logo">Eric Melparambil</div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <nav id="mobile-nav">
+    <div class="logo">Eric Melparambil</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu">
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      </div>
+  </div>
+  </nav>
+  <section id="Profile">
+    <div class="section__pic-container">
+      <img src="./assets/pro-pic.jpeg" alt="EricMelparambil_profilepic">
+    </div>
+    <div class="section__text">
+      <p class="section__text__p1">Hello Im</p>
+      <h1 class="Title">Eric Melparambil</h1>
+      <p class="section__text__p2">Aspiring Software Developer</p>
+      <div class="btn-container">
+      <div class="btn-container">
+        <button class="btn btn-color-2"onclick="window.open('./assets/EM-CV.pdf')">Download CV</button>
+        <button class="btn btn-color-2"onclick="window.open('./#contact')">Contact Info</button>
+      </div>
+      <div id ="socials-container">
+        <img src="assets/linkedin.png" alt="My linkedin Profile" class="icon" onclick="location.href='https://www.linkedin.com/in/eric-saju-177240256/'">
+        <img src="assets/github.png" alt="My Github Profile" class="icon" onclick="location.href='https://www.github.com/Eric-saj22/'">
+      </div>
+
+    </div>
+    <img src="assets/arrow.png"
+       alt="Arrow icon" class="icon_arrow" 
+       onclick="location.href='./#about'"
+       >
+  </section>
+  <section id="about">
+    <p class="section__text__p1">Get To Know More About</p>
+    <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img src="./assets/naturepic.jpeg" alt="Profile picture" class="about-pic">
+        </div>
+        <div class="about-details-container">
+          <div class="about-container">
+            <div class="details-container">
+              <img src="./assets/experience.png" alt="experience icon" class="icon">
+              <h3>Experience</h3>
+              <p>1 year<br>Calvin Klein</p> 
+            </div>
+            <div class="details-container">
+              <img src="./assets/education.png" alt="education icon" class="icon">
+              <h3>Education</h3>
+              <p>Computer Science International <br> 2nd Year Student<br>Technological University of Dublin</p>
+            </div>
+          </div>
+          <div class="text-container" >
+            <p>A motivated individual with hands-on sales and marketing experience at Calvin Klein,
+               excelling in customer engagement and brand promotion. Equally passionate about programming,
+                with a focus on developing innovative software solutions. Combines strong interpersonal skills with technical expertise,
+                aiming to create impactful programs and drive growth in dynamic environments.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img src="assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'">
+  </section>
+  <section id="experience">
+    <p class="section__text__p1">Explore My</p>
+    <h1 class="title">Experience</h1>
+    <div class="experience-details-container">
+      <div class="about-container">
+        <div class="details-container">
+          <h2 class="experience-sub-title">Frontend Development</h2>
+          <div class="article-container">
+            <article>
+                <img src="./assets//checkmark.png" 
+                alt="Experience icon" 
+                class="icon">
+                <div>
+                  <h3>HTML</h3>
+                  <p>Experienced</p>
+                </div>
+            </article>
+            <article>
+                <img src="./assets//checkmark.png" 
+                alt="Experience icon" 
+                class="icon">
+                <div>
+                  <h3>CSS</h3>
+                  <p>Experienced</p>
+                </div>
+            </article>
+            <article>
+                <img src="./assets//checkmark.png" 
+                alt="Experience icon" 
+                class="icon">
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Experienced</p>
+                </div>
+            </article>
+          </div>
+        </div>
+        <div class="details-container">
+          <h2 class="experience-sub-title">Backend Development</h2>
+          <div class="article-container">
+            <article>
+                <img src="./assets//checkmark.png" 
+                alt="Experience icon" 
+                class="icon">
+                <div>
+                  <h3>PostgresSQL</h3>
+                  <p>Experienced</p>
+                </div>
+            </article>
+            <article>
+                <img src="./assets//checkmark.png" 
+                alt="Experience icon" 
+                class="icon">
+                <div>
+                  <h3>Node JS</h3>
+                  <p>Intermediate</p>
+                </div>
+            </article>
+            <article>
+                <img src="./assets//checkmark.png" 
+                alt="Experience icon" 
+                class="icon">
+                <div>
+                  <h3>Express JS</h3>
+                  <p>Intermediate</p>
+                </div>
+            </article>
+            <article>
+                <img src="./assets//checkmark.png" 
+                alt="Experience icon" 
+                class="icon">
+                <div>
+                  <h3>Git</h3>
+                  <p>Experienced</p>
+                </div>
+            </article>
+            <article>
+              <img src="./assets//checkmark.png" 
+              alt="Experience icon" 
+              class="icon">
+              <div>
+                <h3>Python</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets//checkmark.png" 
+              alt="Experience icon" 
+              class="icon">
+              <div>
+                <h3>C</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            
+          </div>
+        </div>
+      </div>
+      <img src="assets/arrow.png"
+       alt="Arrow icon" class="icon arrow" 
+       onclick="location.href='./#projects'"
+       />
+  </section>
+  <section id="projects">
+    <p class="section__text__p1">Browse My Recent</p>
+    <h1 class="title">Projects</h1>
+    <div class="experience-details-container">
+      <div class="about-container">
+        <div class="details-container color-container">
+        <div class="article-container">
+          <img src="./assets/stocks_rising_image.jpg" alt="Project 1"class="project-img">
+        </div>
+        <h2 class="experience-sub-title project-title"></h2>
+        <div class="btn-container">
+          <button class="btn btn-color-2 project-btn" 
+          onclick="location.href='https://github.com/Eric-saj22'
+          ">Github
           </button>
+          <button class="btn btn-color-2 project-btn" 
+          onclick="location.href='https://github.com/Eric-saj22'
+          ">Live Demo
+          </button>
+          
+        </div>
+        </div>
+        <div class="details-container color-container">
+        <div class="article-container">
+          <img src="./assets/project-1.png" alt="Project 1"class="project-img">
+        </div>
+        <h2 class="experience-sub-title project-title"></h2>
+        <div class="btn-container">
+          <button class="btn btn-color-2 project-btn" 
+          onclick="location.href='https://github.com/Eric-saj22'
+          ">Github
+          </button>
+          <button class="btn btn-color-2 project-btn" 
+          onclick="location.href='https://github.com/Eric-saj22'
+          ">Live Demo
+          </button>
+          
+        </div>
+        </div>
+        <div class="details-container color-container">
+        <div class="article-container">
+          <img src="./assets/project-1.png" alt="Project 1"class="project-img">
+        </div>
+        <h2 class="experience-sub-title project-title"></h2>
+        <div class="btn-container">
+          <button class="btn btn-color-2 project-btn" 
+          onclick="location.href='https://github.com/Eric-saj22'
+          ">Github
+          </button>
+          <button class="btn btn-color-2 project-btn" 
+          onclick="location.href='https://github.com/Eric-saj22'
+          ">Live Demo
+          </button>
+          
+        </div>
         </div>
       </div>
-      <nav
-        class="mobile-menu"
-        id="mobile-menu"
-        aria-label="Mobile navigation"
-        hidden
-      >
-        <a href="#work">Selected work <span aria-hidden="true">↗</span></a
-        ><a href="#experience">Experience <span aria-hidden="true">↗</span></a
-        ><a href="#about">About me <span aria-hidden="true">↗</span></a
-        ><a href="#contact">Get in touch <span aria-hidden="true">↗</span></a>
-      </nav>
-      <div class="scroll-progress" aria-hidden="true"></div>
-    </header>
-    <main id="main">
-      <section class="hero dark-section" id="home" aria-labelledby="hero-title">
-        <div class="hero-glow" aria-hidden="true"></div>
-        <div class="container hero-grid">
-          <div class="hero-copy">
-            <p class="eyebrow hero-intro">
-              <span class="status-dot" aria-hidden="true"></span> ERIC
-              MELPARAMBIL <span class="intro-divider">/</span> DUBLIN, IE
-            </p>
-            <h1 id="hero-title">
-              Code meets<br /><span class="accent-serif">capital.</span>
-            </h1>
-            <p class="hero-description">
-              A computer science mind.<br />A financial perspective.<br />A
-              human approach.
-            </p>
-            <div class="hero-actions">
-              <a class="button button-lime" href="#work"
-                >Explore my work <span aria-hidden="true">↗</span></a
-              ><a
-                class="text-link light-link"
-                href="assets/EM-CV.pdf"
-                download="Eric_Melparambil_CV.pdf"
-                >Download CV <span aria-hidden="true">↓</span></a
-              >
-            </div>
-          </div>
-          <div class="hero-art" aria-hidden="true">
-            <div class="art-orbit orbit-one"></div>
-            <div class="art-orbit orbit-two"></div>
-            <div class="art-grid"></div>
-            <div class="monogram-stage">
-              <div class="glass-card glass-back"></div>
-              <div class="glass-card glass-front">
-                <span class="card-topline">THINK. BUILD. REFINE.</span
-                ><span class="monogram">e<span>m</span></span>
-                <div class="card-bottomline">
-                  <span>TECHNOLOGY × FINANCE</span><span>01—26</span>
-                </div>
-              </div>
-            </div>
-            <span class="orbit-label label-code">&lt;/&gt; &nbsp; SOFTWARE</span
-            ><span class="orbit-label label-finance">↗ &nbsp; FINANCE</span>
-            <span class="art-coordinate">A DIFFERENT PERSPECTIVE.</span>
-          </div>
-        </div>
-        <div class="container hero-footer">
-          <p>
-            COMPUTER SCIENCE INTERNATIONAL <span>·</span> CFA LEVEL I CANDIDATE
-          </p>
-          <a href="#work" aria-label="Scroll to selected work"
-            >SCROLL TO DISCOVER <span aria-hidden="true">↓</span></a
-          >
-        </div>
-      </section>
-
-      <section
-        class="work-section section-padding"
-        id="work"
-        aria-labelledby="work-title"
-      >
-        <div class="container">
-          <div class="section-heading reveal">
-            <div>
-              <p class="eyebrow muted">01 / SELECTED WORK</p>
-              <h2 id="work-title">Curiosity.<br />Put to work.</h2>
-            </div>
-            <p class="section-description">
-              From market data to human sentiment.<br />Exploring better
-              questions through code.
-            </p>
-          </div>
-          <article class="featured-project reveal">
-            <div class="featured-copy">
-              <p class="eyebrow">RESEARCH &amp; AUTOMATION</p>
-              <h3>A considered<br />approach to trading.</h3>
-              <p>
-                A research, replay and paper-trading system for an S&amp;P 500
-                futures order-flow strategy. Built with AI. Grounded in
-                verification.
-              </p>
-              <div class="tags dark-tags">
-                <span>Python</span><span>MCP</span><span>Alpaca API</span
-                ><span>Databento</span>
-              </div>
-              <button
-                class="project-open button button-white"
-                type="button"
-                data-project="trading"
-              >
-                Explore project <span aria-hidden="true">↗</span>
-              </button>
-            </div>
-            <div
-              class="research-visual"
-              aria-label="Research workflow: data ingestion, deterministic replay, walk-forward validation, then paper trading. Live trading disabled."
-            >
-              <div class="terminal-top">
-                <span><i></i><i></i><i></i></span
-                ><span>research / pipeline</span
-                ><span class="terminal-live">● REPLAY</span>
-              </div>
-              <div class="pipeline">
-                <div class="pipeline-step">
-                  <span class="step-number">01</span>
-                  <div>
-                    <span class="step-caption">INGEST</span
-                    ><strong>Market data</strong
-                    ><small>Databento → feature engineering</small>
-                  </div>
-                  <span class="step-symbol" aria-hidden="true">↗</span>
-                </div>
-                <div class="pipeline-step">
-                  <span class="step-number">02</span>
-                  <div>
-                    <span class="step-caption">REPRODUCE</span
-                    ><strong>Deterministic replay</strong
-                    ><small>Rule provenance. No look-ahead.</small>
-                  </div>
-                  <span class="step-symbol" aria-hidden="true">↗</span>
-                </div>
-                <div class="pipeline-step">
-                  <span class="step-number">03</span>
-                  <div>
-                    <span class="step-caption">VALIDATE</span
-                    ><strong>Walk-forward testing</strong
-                    ><small>Baseline comparisons &amp; risk gates</small>
-                  </div>
-                  <span class="step-symbol" aria-hidden="true">↗</span>
-                </div>
-              </div>
-              <div class="terminal-bottom">
-                <span class="small-dot" aria-hidden="true"></span>PAPER TRADING
-                BEFORE LIVE REVIEW<span class="locked-label">LIVE OFF</span>
-              </div>
-            </div>
-          </article>
-          <div class="project-pair">
-            <article class="project-card reveal">
-              <div class="project-visual forecast-visual" aria-hidden="true">
-                <div class="visual-topline">
-                  <span>PRICE → POSSIBILITY</span><span>ARIMA</span>
-                </div>
-                <svg viewBox="0 0 500 170" fill="none">
-                  <defs>
-                    <linearGradient id="area" x1="0" y1="0" x2="0" y2="1">
-                      <stop stop-color="#628365" stop-opacity=".22" />
-                      <stop offset="1" stop-color="#628365" stop-opacity="0" />
-                    </linearGradient>
-                  </defs>
-                  <path d="M20 145H480M20 95H480M20 45H480" stroke="#d9ded3" />
-                  <path
-                    d="M20 130L55 120L82 135L120 98L150 112L183 80L210 88L250 57L290 69L325 37V160H20Z"
-                    fill="url(#area)"
-                  />
-                  <path
-                    class="chart-line"
-                    d="M20 130L55 120L82 135L120 98L150 112L183 80L210 88L250 57L290 69L325 37"
-                    stroke="#476b4d"
-                    stroke-width="3"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M325 37L365 22L410 37L475 15V75L410 67L365 62Z"
-                    fill="#628365"
-                    opacity=".12"
-                  />
-                  <path
-                    d="M325 37L365 42L410 52L475 45"
-                    stroke="#476b4d"
-                    stroke-width="2"
-                    stroke-dasharray="5 6"
-                  />
-                  <circle cx="325" cy="37" r="5" fill="#476b4d" />
-                </svg>
-                <div class="visual-bottomline">
-                  <span>HISTORICAL</span><span>FORECAST</span>
-                </div>
-                <span class="illustration-note"
-                  >Concept illustration · not market data</span
-                >
-              </div>
-              <div class="project-card-copy">
-                <p class="eyebrow muted">TIME SERIES &amp; VISUALIZATION</p>
-                <h3>Stock Prediction<br />Application</h3>
-                <p>
-                  Turning historical stock prices into an interactive
-                  exploration of time-series forecasts.
-                </p>
-                <div class="tags">
-                  <span>Streamlit</span><span>ARIMA</span
-                  ><span>Yahoo Finance</span>
-                </div>
-                <button
-                  class="project-open round-link"
-                  type="button"
-                  data-project="stocks"
-                  aria-label="Explore Stock Prediction Application"
-                >
-                  <span>Explore project</span
-                  ><span class="circle-arrow" aria-hidden="true">↗</span>
-                </button>
-              </div>
-            </article>
-            <article class="project-card reveal">
-              <div class="project-visual sentiment-visual" aria-hidden="true">
-                <div class="visual-topline">
-                  <span>LANGUAGE → SIGNAL</span><span>NLP</span>
-                </div>
-                <div class="sentiment-flow">
-                  <div class="token-line">
-                    <span>words</span><span>context</span><span>meaning</span>
-                  </div>
-                  <div class="flow-line"></div>
-                  <div class="sentiment-core">
-                    Aa<span>TF-IDF × RANDOM FOREST</span>
-                  </div>
-                  <div class="flow-line"></div>
-                  <div class="sentiment-outcomes">
-                    <span>＋ Positive</span><span>− Negative</span>
-                  </div>
-                </div>
-              </div>
-              <div class="project-card-copy">
-                <p class="eyebrow muted">MACHINE LEARNING &amp; NLP</p>
-                <h3>Making sense<br />of sentiment.</h3>
-                <p>
-                  A text-classification pipeline that finds positive and
-                  negative sentiment in Twitter messages.
-                </p>
-                <div class="tags">
-                  <span>Python</span><span>NLTK</span><span>Random Forest</span>
-                </div>
-                <button
-                  class="project-open round-link"
-                  type="button"
-                  data-project="sentiment"
-                  aria-label="Explore Sentiment Analysis Application"
-                >
-                  <span>Explore project</span
-                  ><span class="circle-arrow" aria-hidden="true">↗</span>
-                </button>
-              </div>
-            </article>
-          </div>
-          <a
-            class="text-link github-link"
-            href="https://github.com/Eric-saj22"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Find me on GitHub <span aria-hidden="true">↗</span></a
-          >
-        </div>
-      </section>
-
-      <section
-        class="experience-section section-padding"
-        id="experience"
-        aria-labelledby="experience-title"
-      >
-        <div class="container">
-          <div class="section-heading reveal">
-            <div>
-              <p class="eyebrow muted">02 / REAL-WORLD EXPERIENCE</p>
-              <h2 id="experience-title">
-                Technology is good.<br />Understanding people<br />makes it
-                better.
-              </h2>
-            </div>
-          </div>
-          <div class="experience-layout">
-            <div class="role-summary reveal">
-              <span class="role-brand">currys<span>↗</span></span>
-              <h3>Sales Assistant</h3>
-              <p>Currys PC World · Blanchardstown, Dublin</p>
-              <span class="date-label">SEP 2024 — PRESENT</span>
-              <p class="role-description">
-                Connecting technical knowledge with what customers actually
-                need.
-              </p>
-            </div>
-            <div class="role-details reveal">
-              <div class="sales-stats">
-                <div>
-                  <span
-                    class="stat-value"
-                    data-count="1000000"
-                    data-format="sales"
-                    >€1m+</span
-                  ><span class="stat-label">PERSONAL SALES SINCE SEP 2024</span>
-                </div>
-                <div>
-                  <span
-                    class="stat-value"
-                    data-count="1.8"
-                    data-format="decimal"
-                    >1.8</span
-                  ><span class="stat-label">UNITS PER TRANSACTION</span>
-                </div>
-              </div>
-              <div class="experience-points">
-                <div>
-                  <span>01</span>
-                  <div>
-                    <h4>Advice that fits.</h4>
-                    <p>
-                      Building customer rapport and recommending products that
-                      match their needs and budget. Using ChatGPT to research
-                      comparisons and find in-stock alternatives.
-                    </p>
-                  </div>
-                </div>
-                <div>
-                  <span>02</span>
-                  <div>
-                    <h4>Finding the root cause.</h4>
-                    <p>
-                      Technical support across PCs, laptops, mobile devices and
-                      electronics, backed by ongoing training in operating
-                      systems, Microsoft 365 and emerging technology.
-                    </p>
-                  </div>
-                </div>
-                <div>
-                  <span>03</span>
-                  <div>
-                    <h4>Trust, by design.</h4>
-                    <p>
-                      Handling sensitive customer information in line with GDPR
-                      requirements, supported by Currys' data protection and
-                      privacy training.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section
-        class="about-section dark-section section-padding"
-        id="about"
-        aria-labelledby="about-title"
-      >
-        <div class="container">
-          <div class="section-heading reveal">
-            <div>
-              <p class="eyebrow">03 / THE PERSON BEHIND THE PROJECTS</p>
-              <h2 id="about-title">
-                Always a student.<br /><span class="soft-text"
-                  >In more ways than one.</span
-                >
-              </h2>
-            </div>
-          </div>
-          <div class="about-grid">
-            <div class="portrait-card reveal">
-              <img
-                src="assets/pro-pic.jpeg"
-                alt="Eric Melparambil at a colourful outdoor celebration"
-                width="1010"
-                height="1019"
-                loading="lazy"
-              />
-              <div class="portrait-caption">
-                <strong>Eric Melparambil</strong
-                ><span>DUBLIN, IRELAND <span aria-hidden="true">↗</span></span>
-              </div>
-            </div>
-            <div class="education-stack">
-              <div class="education-card reveal">
-                <span class="eyebrow">THE TECHNICAL FOUNDATION</span>
-                <h3>Computer Science<br />International</h3>
-                <p>Technological University Dublin</p>
-                <div class="education-meta">
-                  <span>B.S.</span><span>EXPECTED MAY 2027</span>
-                </div>
-                <details>
-                  <summary>
-                    What I'm studying <span aria-hidden="true">+</span>
-                  </summary>
-                  <p>
-                    Data Structures &amp; Algorithms, PostgreSQL, Objects &amp;
-                    Design, Computer Organization &amp; Programming, Web
-                    Development, Object-Oriented Programming, Statistics &amp;
-                    Applications, and Mathematics.
-                  </p>
-                </details>
-              </div>
-              <div class="education-card reveal">
-                <span class="eyebrow">THE FINANCIAL PERSPECTIVE</span>
-                <h3>CFA Level I<br />Candidate</h3>
-                <p>CFA Institute</p>
-                <div class="education-meta">
-                  <span>LEVEL I EXAM</span><span>FEBRUARY 2027</span>
-                </div>
-                <details>
-                  <summary>
-                    What I'm studying <span aria-hidden="true">+</span>
-                  </summary>
-                  <p>
-                    Economics, Financial Statement Analysis, Corporate Finance,
-                    Quantitative Methods, Portfolio Management, and Ethical
-                    &amp; Professional Standards.
-                  </p>
-                </details>
-              </div>
-            </div>
-          </div>
-          <div class="community-card reveal">
-            <div class="community-copy">
-              <p class="eyebrow">BEYOND THE SCREEN / AUGUST 2026</p>
-              <h3>Bringing people<br />together.</h3>
-              <p>
-                As lead organizer of the Indian Family Club charity football
-                tournament, I brought teams together for a shared cause, raising
-                €2,700 through registration fees with a cash prize for the
-                winning team.
-              </p>
-            </div>
-            <div class="community-stats">
-              <div><strong data-count="12">12</strong><span>TEAMS</span></div>
-              <div>
-                <strong data-count="120" data-format="plus">120+</strong
-                ><span>PLAYERS</span>
-              </div>
-              <div>
-                <strong data-count="2700" data-format="euro">€2,700</strong
-                ><span>RAISED</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section
-        class="contact-section section-padding"
-        id="contact"
-        aria-labelledby="contact-title"
-      >
-        <div class="container reveal">
-          <p class="eyebrow muted">04 / WHAT'S NEXT?</p>
-          <h2 id="contact-title">
-            Good things start<br />with a
-            <span class="accent-serif">conversation.</span>
-          </h2>
-          <p>
-            Have a role, a project, or an interesting idea?<br />I'd love to
-            hear about it.
-          </p>
-          <div class="contact-actions">
-            <a class="button button-dark" href="mailto:ericsaju22@gmail.com"
-              >Say hello <span aria-hidden="true">↗</span></a
-            ><a
-              class="text-link"
-              href="assets/EM-CV.pdf"
-              download="Eric_Melparambil_CV.pdf"
-              >Get my CV <span aria-hidden="true">↓</span></a
-            >
-          </div>
-          <div class="email-row">
-            <a href="mailto:ericsaju22@gmail.com">ericsaju22@gmail.com</a
-            ><button
-              class="copy-email"
-              type="button"
-              aria-label="Copy email address"
-            >
-              <svg
-                viewBox="0 0 24 24"
-                width="17"
-                height="17"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="1.5"
-                aria-hidden="true"
-              >
-                <rect x="8" y="8" width="12" height="12" rx="2" />
-                <path
-                  d="M16 8V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h3"
-                />
-              </svg></button
-            ><span class="copy-status" role="status"></span>
-          </div>
-        </div>
-      </section>
-    </main>
-    <footer class="site-footer">
-      <div class="container footer-grid">
-        <a class="wordmark" href="#home" aria-label="Back to top"
-          >eric<span class="wordmark-dot">.</span></a
-        >
-        <p>© 2026 Eric Melparambil</p>
-        <div>
-          <a
-            href="https://www.linkedin.com/in/eric-saju-177240256/"
-            target="_blank"
-            rel="noopener noreferrer"
-            >LinkedIn ↗</a
-          ><a
-            href="https://github.com/Eric-saj22"
-            target="_blank"
-            rel="noopener noreferrer"
-            >GitHub ↗</a
-          ><a href="#home" aria-label="Back to top">↑</a>
-        </div>
+    </div>
+    <img src="assets/arrow.png" 
+    alt="Arrow icon" class="icon arrow" 
+    onclick="location.href='./#contact'">
+  </section>
+  <section id="contact">
+    <p class="section__text__p1">Get in Touch</p>
+    <h1 class="title">Contact Me</h1>
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <img src="./assets/email.png"
+         alt="Email Icon"
+         class="icon contact-icon email-icon"/>
+        <p><a href="mailto:ericsaju22@gmail.com">ericsaju22@gmail.com</a></p>
       </div>
-    </footer>
-
-    <dialog
-      class="project-dialog"
-      id="project-dialog"
-      aria-labelledby="dialog-title"
-    >
-      <button
-        class="dialog-close"
-        type="button"
-        aria-label="Close project details"
-      >
-        ×
-      </button>
-      <div class="dialog-content">
-        <p class="eyebrow muted" id="dialog-category"></p>
-        <h2 id="dialog-title"></h2>
-        <p id="dialog-intro"></p>
-        <div class="tags" id="dialog-tags"></div>
-        <div id="dialog-body"></div>
-        <a class="text-link" href="mailto:ericsaju22@gmail.com"
-          >Let's talk about this project <span aria-hidden="true">↗</span></a
-        >
+      <div class="contact-info-container">
+        <img src="./assets/linkedin.png" alt="linkedin icon" class="icon contact-icon"/>
+        <p><a href="https://www.linkedin.com/in/eric-saju-177240256/">LinkedIn</a></p>
       </div>
-    </dialog>
-  </body>
+    </div>
+  </section>
+  <footer>
+    <nav>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <p>Created by Eric Melparambil &copy; 2024</p>
+  </footer>
+</body>
 </html>
